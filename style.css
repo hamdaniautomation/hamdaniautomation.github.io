@@ -1,0 +1,191 @@
+/* ===========================
+   Hamdani Automation Styles
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#050816;
+    color:#ffffff;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Header */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(5,8,22,.85);
+    backdrop-filter:blur(12px);
+    z-index:1000;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:700;
+    color:#3b82f6;
+}
+
+nav ul{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#3b82f6;
+}
+
+.btn,
+.primary-btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:#3b82f6;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover,
+.primary-btn:hover{
+    background:#2563eb;
+    transform:translateY(-3px);
+}
+
+.secondary-btn{
+    display:inline-block;
+    padding:14px 28px;
+    border:1px solid #3b82f6;
+    color:#3b82f6;
+    text-decoration:none;
+    border-radius:8px;
+    margin-left:12px;
+}
+
+/* Hero */
+
+.hero{
+    padding:170px 0 120px;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:60px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#cbd5e1;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.hero-card{
+    background:#101828;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:40px;
+    box-shadow:0 20px 60px rgba(0,0,0,.4);
+}
+
+/* Sections */
+
+.section{
+    padding:100px 0;
+}
+
+.section h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:#101828;
+    padding:30px;
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#3b82f6;
+}
+
+.dark{
+    background:#0b1120;
+}
+
+footer{
+    text-align:center;
+    padding:40px 0;
+    border-top:1px solid rgba(255,255,255,.08);
+    color:#94a3b8;
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.hero-grid{
+grid-template-columns:1fr;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+nav ul{
+display:none;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+}
