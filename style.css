@@ -189,3 +189,22 @@ font-size:42px;
 }
 
 }
+
+
+.stats{
+display:flex;
+gap:40px;
+margin-top:50px;
+flex-wrap:wrap;
+}
+
+.stat h2{
+font-size:38px;
+color:#3b82f6;
+margin-bottom:8px;
+}
+
+.stat p{
+color:#cbd5e1;
+font-size:15px;
+}
