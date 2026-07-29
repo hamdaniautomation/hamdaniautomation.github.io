@@ -145,16 +145,19 @@ nav ul li a:hover{
 }
 
 .card{
-    background:#101828;
-    padding:30px;
-    border-radius:16px;
+    background:#111827;
+    padding:40px;
+    border-radius:20px;
+
+    min-height:420px;
+    transition:.3s ease;
     border:1px solid rgba(255,255,255,.08);
-    transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-10px);
     border-color:#3b82f6;
+    box-shadow:0 20px 40px rgba(59,130,246,.2);
 }
 
 .dark{
@@ -207,4 +210,16 @@ margin-bottom:8px;
 .stat p{
 color:#cbd5e1;
 font-size:15px;
+}
+
+.card{
+    min-height:420px;
+    transition:.3s ease;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#3b82f6;
+    box-shadow:0 20px 40px rgba(59,130,246,.2);
 }
